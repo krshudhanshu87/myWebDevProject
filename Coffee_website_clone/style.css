@@ -1,0 +1,457 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+body{
+     overflow-x: hidden;
+}
+
+body button,img{
+    cursor: pointer;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #3e151d;
+    /* display: none; */
+}
+
+.nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    /* display: none; */
+}
+
+.nav .logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0px 2rem;
+    padding-bottom: 3px;
+}
+
+.nav .menu b{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.nav a:hover{
+    border-bottom: 2px solid rgba(248, 248, 96, 0.773);
+}
+
+.home_page{
+    height: calc(100vh - 10%);
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.home_page .left{
+    height: 100%;
+    width: 50%;
+    padding: 10% 0% 0% 5%;
+}
+
+.home_page .left h3{
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.home_page .left h2{
+    padding: 20px 0px;
+    font-size: 2.3rem;
+}
+
+.home_page .left p{
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    opacity: .7;
+}
+
+.home_page .left button{
+    height: 35px;
+    width: 130px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.home_page .left .button .order{
+    background-color:#F3961C;
+    color: black;
+    border: none;
+    margin-right: 10px;
+}
+
+.home_page .right{
+    height: 100%;
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.home_page .right .right_img{
+    background-image: url(coffee.png);
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home_page .left .button .order:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.home_page .left .button .contact:hover{
+    background-color: #F3961C;
+    border: none;
+    color: black;
+}
+
+.about_us{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: white;
+    /* display: none; */
+}
+
+.about_us .img{
+    height: 100%;
+    width: 50%;
+    padding: 13% 0% 0% 8%;
+}
+
+.about_us .img .about_us_img{
+    height: 300px;
+    width: 300px;
+    background-image: url(about_img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.about_us .text{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding-top: 15%;
+    padding-right: 15%;
+    color: black;
+}
+
+.about_us .text h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.about_us .text p{
+    font-size: 1rem;
+    margin: 5% 0%;
+    font-weight: 500;
+    opacity: .7;
+}
+
+.about_us .text button{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    margin: 0px 5px;
+
+}
+
+.gallery{
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    /* display: none; */
+}
+
+.gallery h2{
+    height:10vh ;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.gallery .img .row1_img{
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+}
+
+.gallery .img .row1_img div{
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.gallery .img .row1_img div img{
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.gallery .img .row2_img{
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+}
+
+.gallery .img .row2_img div{
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.gallery .img .row2_img div img{
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.gallery .img .row1_img div img:hover{
+    opacity: 1;
+    transition: .5s;
+    scale: 1.1;
+}
+.gallery .img .row2_img div img:hover{
+    opacity: 1;
+    transition: .5s;
+    scale: 1.1;
+}
+
+
+.our_menu{
+    height: 80vh;
+    width: 100vw;
+    background-color: #252525;
+    text-align: center;
+}
+
+.our_menu h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.our_menu .row1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.our_menu .row1 img{
+    height: 200px;
+    width: 200px;
+    opacity: .7;
+    
+}
+
+.our_menu .row2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.our_menu .row2 img{
+    height: 200px;
+    width: 200px;
+    opacity: .7;
+}
+
+.our_menu .row1 img:hover{
+    opacity: 1;
+    scale: 1.05;
+    transition: .5s;
+}
+
+.our_menu .row2 img:hover{
+    opacity: 1;
+    transition: .5s;
+    scale: 1.05;
+}
+
+.contact_us{
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(149, 143, 143);
+    color: black;
+    position: relative;
+}
+
+.contact_us div{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 0px 40px;
+}
+
+.contact_us .contact_us_left{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 35px;
+    opacity: .9;
+}
+
+.contact_us .contact_us_right input, textarea{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact_us .contact_us_right textarea{
+    height: 60px;
+}
+
+.contact_us .contact_us_right #submit{
+    height: 35px;
+    width: 100px;
+    margin-left: 38%;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    background-color: #3e151d;
+    font-size: .9rem;
+}
+
+.contact_us_bottom{
+    position: absolute;
+    height:10vh;
+    width: 100vw;
+    background-color: #252525;
+    bottom: 0%;
+    border-radius: 0px 0px 5px 5px;
+    color: white;
+    align-items: center;
+}
+
+
+
+@media (max-width:600px) {
+    .nav_link a{
+        display: none;
+    }
+    .nav .menu b{
+        display: block;
+    }
+    .home_page .right{
+        display: none;
+    }
+    .home_page .left{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_us{
+        height: 80vh;
+        flex-direction: column-reverse;
+    }
+    .about_us .img{
+        width: 100%;
+        height: 50%
+    }
+     
+    .about_us .text{
+        width: 100%;
+        height: 50%;
+    }
+
+    .about_us .img .about_us_img{
+        height: 200px;
+        width: 200px;
+        margin-left: 11%;
+    }
+
+    .gallery{
+        height: 100vh;
+        overflow: hidden;
+    }
+    .gallery .img .row1_img{
+        flex-wrap: wrap;
+    }
+
+    .gallery .img .row2_img{
+        display: none;
+    }
+
+    .our_menu{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .our_menu .row1{
+        flex-direction: column;
+    }
+    .our_menu .row2{
+        display: none;
+    }
+
+    .contact_us{
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    .contact_us .contact_us_left{
+        display: none;
+    }
+
+    .contact_us .contact_us_right input, textarea{
+        width: 75vw;
+
+    }
+
+    .contact_us_bottom{
+        height: 5vh;
+    }
+}
